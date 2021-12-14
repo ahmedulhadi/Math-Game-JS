@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc)
+}
+
+#container {
+    position: relative;
+    height: 400px;
+    width: 550px;
+    background: rgb(171, 217, 248);
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 4px 4px 0px rgb(9, 124, 190);
+    border-radius: 10px;
+}
+
+#score {
+    background-color: rgb(252, 230, 201);
+    color: black;
+    padding: 10 px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 0px 2px 0px gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#correct {
+    position: absolute;
+    left: 260px;
+    background-color: rgb(65, 221, 65);
+    color: white;
+    padding: 5px;
+    display: none;
+    border-radius: 5px;
+}
+
+#wrong {
+    position: absolute;
+    left: 100px;
+    background-color: rgb(252, 16, 16);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    background-color: rgb(176, 165, 238);
+    margin: 50px auto 10px auto;
+    box-shadow: 0px 4px rgb(157, 120, 243);
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    background-color: rgb(201, 116, 189);
+    margin: 10px auto 20px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px rgb(48, 19, 48);
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 36px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 2px rgb(221, 218, 218);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s
+}
+
+#box4 {
+    margin-right: 0px;
+}
+
+.box:hover,
+#startreset:hover {
+    background-color: rgb(157, 135, 233);
+    color: white;
+    box-shadow: 0px 4px rgb(47, 115, 216);
+}
+
+.box:active,
+#startreset:active {
+    box-shadow: blanchedalmond;
+    top: 2px
+}
+
+#startreset {
+    width: 78px;
+    padding: 8px;
+    background-color: rgb(144, 181, 230);
+    margin: -10px auto;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 2px rgb(221, 218, 218);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s
+}
+
+#timeremaining {
+    width: 152px;
+    padding: 8px;
+    position: absolute;
+    top: 395px;
+    left: 400px;
+    background-color: rgb(147, 216, 78);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(53, 54, 52, 0.486);
+    display: none;
+}
+
+#gameover {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    display: none;
+    background: linear-gradient(rgba(233, 61, 98, 0.993), rgba(48, 240, 208, 0.89));
+}
